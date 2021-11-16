@@ -1,0 +1,15 @@
+** Pizza House **
+Please enter the price of meal:RM 120
+Price of Meal:  120.0
+Sales Tax:	9.90
+-------------------------------------
+Total Amount:                  RM129.90
+Discount:                  RM6.50
+The Amount After Discount: RM123.41
+
+Please Enter amount tenderes: RM 150
+Amount Tendered:  150.0
+Total Amount: 	123.405
+-------------------------------------
+Change Cash: 	26.595
+** Thank You ***
