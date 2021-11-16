@@ -1,0 +1,62 @@
+package slefProgramming;
+import java.util.Scanner;
+public class Pizza {
+
+			public static void main(String[] args) {
+				// TODO Auto-generated method stub
+				Scanner sc = new Scanner(System.in);
+				
+				double PriceOfMeal;
+				double SalesTax = 0.0825;
+				double Tendered;
+				System.out.println("** Pizza House **");
+				
+				System.out.print("Please enter the price of meal:RM ");
+				PriceOfMeal = sc.nextDouble();
+				
+				System.out.println("Price of Meal:  " + PriceOfMeal);
+				System.out.printf("Sales Tax:\t%.2f\n" , (PriceOfMeal * SalesTax));
+				
+				double TotalAmount = PriceOfMeal + (PriceOfMeal * SalesTax);
+				System.out.println("-------------------------------------");
+				System.out.printf("Total Amount:                  RM%.2f\n" , TotalAmount);
+				if ((TotalAmount >= 100)&&(TotalAmount<=199)) {
+					double Discount = TotalAmount * 0.05;
+					double TA = TotalAmount - Discount;
+					System.out.printf("Discount:                  RM%.2f\n" , Discount);
+					System.out.printf("The Amount After Discount: RM%.2f\n" ,TA);
+					System.out.println();
+					System.out.print("Please Enter amount tenderes: RM ");
+					Tendered = sc.nextDouble();
+					System.out.println("Amount Tendered:  " + Tendered);
+					System.out.println("Total Amount: \t" + TA);
+					System.out.println("-------------------------------------");
+					System.out.println("Change Cash: \t" + (Tendered - TA));
+					System.out.println("** Thank You ***");
+					}
+					else if (TotalAmount >= 200) {
+					double Discount = TotalAmount * 0.10;
+					double TA = TotalAmount - Discount;
+					System.out.printf("Discount:                  RM%.2f\n" , Discount);
+					System.out.printf("The Amount After Discount: RM%.2f\n" ,TA);
+					System.out.println();
+					System.out.print("Please Enter amount tenderes: RM ");
+					Tendered = sc.nextDouble();
+					System.out.println("Amount Tendered:  " + Tendered);
+					System.out.println("Total Amount: \t" + TA);
+					System.out.println("-------------------------------------");
+					System.out.println("Change Cash: \t" + (Tendered - TA));
+					System.out.println("** Thank You ***");
+					}
+					else {
+						System.out.print("Please Enter amount tenderes: RM ");
+						Tendered = sc.nextDouble();
+						System.out.println("Amount Tendered:  " + Tendered);
+						System.out.println("Total Amount: \t" + TotalAmount);
+						System.out.println("-------------------------------------");
+						System.out.println("Change Cash: \t" + (Tendered - TotalAmount));
+						System.out.println("** Thank You ***");
+					}
+			}
+	
+	}
