@@ -3,7 +3,7 @@ package training;
 public class Line {
     public static void line(){
         int line=1;
-        while(line<=130){
+        while(line<=110){
             System.out.printf("%c",45);
             line++; 
         }
