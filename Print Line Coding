@@ -1,0 +1,19 @@
+package training;
+
+public class Line {
+    public static void line(){
+        int line=1;
+        while(line<=130){
+            System.out.printf("%c",45);
+            line++; 
+        }
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+line();
+System.out.printf("\n\tName\t\t\t\tMatric Number\t\t\tSem\t\t\t  Course\n");
+line();
+	}
+
+}
