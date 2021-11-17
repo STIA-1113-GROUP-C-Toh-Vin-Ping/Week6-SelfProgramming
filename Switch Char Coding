@@ -1,0 +1,25 @@
+package selfProgramming;
+
+public class SwitchChar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char ch = 'b';
+		switch (ch)
+		{
+		 case 'a' :
+		    System.out.println("ch=a");
+
+		 case 'b' :
+			 System.out.println("ch=b"); 
+			 							//dont have break so that will print the below case together
+		 case 'c' :
+			 System.out.println("ch=c");
+
+		 default:
+		   System.out.println("default");
+		} 
+
+	}
+
+}
