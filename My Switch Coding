@@ -1,0 +1,26 @@
+package onlineclass;
+
+public class MySwitch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 20;
+		
+		if(x==10) {
+		System.out.println("x is ten");
+	
+		}
+		else if (x == 20) {
+			System.out.println("x is twenty");
+		}
+		else if (x == 30) {
+			System.out.println("x is thirty");
+		}
+		
+		else {
+			System.out.println("x is not ten, twenty ot thirty");
+		}
+
+	}
+
+}
