@@ -1,0 +1,13 @@
+package selfProgramming;
+
+public class Methods {
+	static void myMethod(String fname, int age, String gender) {
+	    System.out.println(fname + " is " + age + gender);
+	  }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		myMethod("Rosse", 18, "female");
+	}
+
+}
