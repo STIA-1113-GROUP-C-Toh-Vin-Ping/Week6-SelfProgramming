@@ -1,0 +1,52 @@
+package onlineclass;
+import java.util.Scanner;
+public class SwitchMark {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 //* Write a program which calculates marks on basis of given grades in java using switch statement
+		 //* if marks >=90 then Excellent: Grade A
+		 //* if marks >=90 and less than 80  then Very Good: Grade B  
+		 //* if marks >=80 and less than 70 then Good: Grade C 
+		 //* if marks >=70 and less than 60 then Good: Grade D
+		 //* if marks >=60 and less than 50 then Good: Grade E
+		 //* if marks <=50 and less than 40 then Just Passed: Grade F
+		 //* if any other marks then print Failed!
+		Scanner sc = new Scanner (System.in);
+		System.out.print("Enter your mark: ");
+		int mark = sc.nextInt();
+		
+		switch (mark/10)
+		{
+		case 10:
+		case 9:
+			System.out.println("Excellent: Grade A");
+			break;
+			
+		case 8:
+			System.out.println("Very Good: Grade B ");
+			break;
+			
+		case 7:
+			System.out.println("Good: Grade C ");
+			break;
+			
+		case 6:
+			System.out.println("Good: Grade D ");
+			break;
+			
+		case 5:
+			System.out.println("Good: Grade E ");
+			break;
+			
+		case 4:
+			System.out.println("Passed: Grade F ");
+			break;
+			
+			default:
+				System.out.println("Failed!");
+		}
+		
+	}
+
+}
