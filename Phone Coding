@@ -1,0 +1,31 @@
+package e;
+import java.util.Scanner;
+public class Phone {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanMe = new Scanner (System.in);
+		
+		int ModelCode;
+		
+		System.out.print("Please enter the model(110/210/310): ");
+		ModelCode = scanMe.nextInt();
+		
+		switch (ModelCode) {
+		case 110:
+			System.out.print("The price of the model 110 is RM 500");
+			break;
+		case 210:
+			System.out.print("The price of the model 210 is RM 1000");
+			break;
+		case 310:
+			System.out.print("The price of the model 310 is RM 1200");
+			break;
+		default:
+			System.out.print("INVALID CODE!");
+			break;
+	}
+
+	}
+
+}
